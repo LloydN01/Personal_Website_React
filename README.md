@@ -1,7 +1,7 @@
 # Personal Portfolio Website (Lloydna.com)
 
-## Hello, World!
-## My name is Lloyd, and I'm a Software Developer
+Hello, World!
+My name is Lloyd, and I'm a Software Developer
 
 A Software Developer studying Computer Science and Data Science at the University of Western Australia.
 
