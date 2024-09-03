@@ -77,13 +77,13 @@ const ProjectSections = () => {
     return (
         <div className="w-full flex flex-col">
             <div className="bg-[#E7F59E] h-screen text-black flex justify-center items-center">
-                <div className="md:p-10 md:w-[40rem] m-10">
-                    <h1 className="font-bold text-2xl md:text-3xl">Projects</h1>
-                    <p className="font-bold italic text-lg md:text-xl">
+                <div className="md:p-10 md:w-[40rem] m-5">
+                    <h1 className="font-bold text-xl md:text-3xl">Projects</h1>
+                    <p className="font-bold italic text-xs md:text-sm">
                         A list of projects I have worked on, starting with this
                         website!
                     </p>
-                    <p className=" text-sm md:text-base mt-10">
+                    <p className=" text-xs md:text-sm mt-10">
                         This website was built using React + TypeScript +
                         Tailwind.
                     </p>

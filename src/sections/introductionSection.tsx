@@ -35,18 +35,18 @@ const IntroductionSection = () => {
 
     return (
         <div className="h-screen bg-[#6EFAFB] w-full text-black flex flex-row items-center justify-center">
-            <div className="flex flex-col m-10 md:p-10 md:w-[40rem]">
+            <div className="flex flex-col m-5 md:p-10 md:w-[40rem]">
                 <div>
-                    <h1 className="text-3xl md:text-4xl">
+                    <h1 className="text-xl md:text-3xl">
                         Hello, World! <br /> My name is{" "}
                         <span className="font-bold">Lloyd</span>, I'm a...
                     </h1>
-                    <h1 className="w-full text-3xl md:text-4xl font-bold h-[10rem]">
+                    <h1 className="w-full text-xl md:text-3xl font-bold h-[10rem]">
                         {title}
                         <span id="typing-animation">|</span>
                     </h1>
                 </div>
-                <p className="text-md md:text-xl">
+                <p className="text-xs md:text-sm">
                     A Software Developer studying Computer Science and Data
                     Science at the University of Western Australia.
                     <br /> <br /> Currently in my last year of studies and

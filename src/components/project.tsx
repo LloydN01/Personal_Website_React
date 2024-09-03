@@ -29,16 +29,16 @@ const Project = ({
 
     return (
         <div className="flex flex-col h-screen mx-auto md:p-10 md:w-[40rem]">
-            <div className="m-10 md:m-0">
-                <h3 className="font-bold text-2xl md:text-3xl">{name}</h3>
-                <h5 className="font-bold italic text-lg md:text-xl">
+            <div className="m-5 md:m-0">
+                <h3 className="font-bold text-xl md:text-3xl">{name}</h3>
+                <h5 className="font-bold italic text-xs md:text-xl">
                     {subHeading}
                 </h5>
-                <h6 className="font-bold text-base md:text-lg">{role}</h6>
-                <p className="project-description text-sm md:text-base">
+                <h6 className="font-bold text-xs md:text-sm">{role}</h6>
+                <p className="project-description text-xs md:text-sm">
                     {description}
                 </p>
-                <p className="project-tech text-sm md:text-base">
+                <p className="project-tech text-xs md:text-sm">
                     <b>Technologies:</b> {technologies}
                 </p>
             </div>
@@ -60,7 +60,7 @@ const Project = ({
                             ) : (
                                 <iframe
                                     src={asset.src}
-                                    className="rounded-xl"
+                                    className="rounded-xl max-w-[13rem] md:max-w-none md:h-[10rem]"
                                     title="YouTube video player"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowFullScreen
