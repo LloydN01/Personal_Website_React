@@ -72,21 +72,26 @@ const projectContent = [
 ];
 
 const ProjectSections = () => {
-    const colours: string[] = ["#0FA3B1", "#F7A072", "#EA638C ", "#E7F59E"];
+    const colours: string[] = ["#0FA3B1", "#F7A072", "#EA638C "];
 
     return (
         <div className="w-full flex flex-col">
-            <div className="text-center">
-                <h1>Projects</h1>
-                <p>
-                    This website was built by me using React + TypeScript +
-                    TailwindCSS.
-                </p>
+            <div className="bg-[#E7F59E] h-screen text-black flex justify-center items-center">
+                <div className="md:p-10 md:w-[40rem] m-10">
+                    <h1 className="font-bold text-2xl md:text-3xl">Projects</h1>
+                    <p className="font-bold italic text-lg md:text-xl">
+                        A list of projects I have worked on, starting with this
+                        website!
+                    </p>
+                    <p className=" text-sm md:text-base mt-10">
+                        This website was built using React + TypeScript +
+                        Tailwind.
+                    </p>
+                </div>
             </div>
             {projectContent.map((project, index) => (
                 <div
                     key={project.id}
-                    className="md:border-[30px]"
                     style={{
                         backgroundColor: colours[index],
                         borderColor: colours[index],

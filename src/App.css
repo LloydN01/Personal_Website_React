@@ -36,3 +36,19 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes typing {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#typing-animation {
+    animation: typing 0.7s infinite;
+}

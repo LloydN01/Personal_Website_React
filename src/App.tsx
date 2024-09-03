@@ -1,8 +1,14 @@
 import "./App.css";
+import IntroductionSection from "./sections/introductionSection";
 import ProjectSections from "./sections/projectSections";
 
 function App() {
-    return <ProjectSections />;
+    return (
+        <>
+            <IntroductionSection />
+            <ProjectSections />
+        </>
+    );
 }
 
 export default App;

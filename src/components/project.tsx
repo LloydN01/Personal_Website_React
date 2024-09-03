@@ -28,8 +28,8 @@ const Project = ({
     };
 
     return (
-        <div className="flex flex-col h-screen mx-auto p-3 md:p-10 md:w-[40rem]">
-            <div>
+        <div className="flex flex-col h-screen mx-auto md:p-10 md:w-[40rem]">
+            <div className="m-10 md:m-0">
                 <h3 className="font-bold text-2xl md:text-3xl">{name}</h3>
                 <h5 className="font-bold italic text-lg md:text-xl">
                     {subHeading}
@@ -42,7 +42,7 @@ const Project = ({
                     <b>Technologies:</b> {technologies}
                 </p>
             </div>
-            <div className="flex flex-col flex-grow text-center">
+            <div className="flex flex-col flex-grow text-center p-3 md:p-0">
                 <div className="project-carousel flex justify-center flex-grow">
                     {assets.map((asset, index) => (
                         <div
@@ -55,12 +55,12 @@ const Project = ({
                                 <img
                                     src={asset.src}
                                     alt={asset.alt}
-                                    className="rounded-2xl"
+                                    className="rounded-xl max-h-[10rem]"
                                 />
                             ) : (
                                 <iframe
                                     src={asset.src}
-                                    className="rounded-2xl"
+                                    className="rounded-xl"
                                     title="YouTube video player"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowFullScreen
