@@ -5,7 +5,6 @@ const titleArray = [
     "Full-Stack Developer",
     "Data Analyst",
     "Data Engineer",
-    "Technology Consultant",
 ];
 
 const IntroductionSection = () => {
