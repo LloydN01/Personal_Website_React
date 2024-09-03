@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const ExperienceSection = () => {
-    const [selectedJob, setSelectedJob] = useState<string | null>(null);
+    const [selectedJob, setSelectedJob] = useState<string | null>("Visagio");
 
     const experiences = [
         {
