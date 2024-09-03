@@ -8,8 +8,8 @@ const ExperienceSection = () => {
             company: "Visagio",
             position: "Software Developer Consultant",
             description: [
-                "Implemented Angular (Web Framework) and TypeScript to create dynamic and responsive user interfaces, ensuring a seamless and engaging user experience",
-                "Leveraged FastAPI, Pandas, and NumPy for back-end development, specializing in efficient data processing and manipulation, contributing to the creation of a robust and scalable web application",
+                "Implemented Angular (Web Framework) and TypeScript to create dynamic and responsive front-end user interfaces, ensuring a seamless and engaging user experience",
+                "Leveraged Python, FastAPI, Pandas, and NumPy for back-end development, specializing in efficient data processing and manipulation, contributing to the creation of a robust and scalable web application",
                 "Led development of a streamlined staff training needs analysis application, overseeing the design and implementation of the UI/UX and custom database",
             ],
         },
@@ -18,8 +18,7 @@ const ExperienceSection = () => {
             position: "Data Science Vacation Student",
             description: [
                 "Analysed and extracted crucial emissions data from raw dataset for ESG reporting to stakeholders",
-                "Displayed superb data analysis ability by determining trends in talent recruitment and OSH data",
-                "Further developed Microsoft Excel skills by frequently utilising VBA, formula functions, and pivot tables",
+                "Utilized Excel and Python for comprehensive data analysis, employing VBA, formula functions, and pivot tables to identify trends in talent recruitment and OSH data",
             ],
         },
     ];
