@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import ContactSection from "./sections/contactSection";
 import ExperienceSection from "./sections/experienceSection";
