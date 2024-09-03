@@ -76,7 +76,7 @@ const ProjectSections = () => {
 
     return (
         <div className="w-full flex flex-col">
-            <div className="bg-[#E7F59E] h-screen text-black flex justify-center items-center">
+            <div className="bg-[#E7F59E] h-screen text-black flex md:justify-center items-center">
                 <div className="md:p-10 md:w-[40rem] m-5">
                     <h1 className="font-bold text-xl md:text-3xl">Projects</h1>
                     <p className="font-bold italic text-xs md:text-sm">
