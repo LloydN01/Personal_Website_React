@@ -24,7 +24,7 @@ const ExperienceSection = () => {
     ];
 
     return (
-        <div className="h-screen bg-[#3C096C] w-full flex flex-row md:justify-center">
+        <div className="h-screen bg-[#240046] w-full flex flex-row md:justify-center">
             <div className="flex flex-col md:flex-row m-5 md:p-10 md:w-[60rem] space-y-5 md:space-y-0 md:space-x-10">
                 <div className="flex flex-col md:w-1/3">
                     <h1 className="font-bold text-xl md:text-3xl mb-10">
