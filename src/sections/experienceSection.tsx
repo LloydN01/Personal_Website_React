@@ -34,7 +34,11 @@ const ExperienceSection = () => {
                         {experiences.map((experience, index) => (
                             <li
                                 key={index}
-                                className="cursor-pointer hover:underline"
+                                className={`cursor-pointer hover:underline ${
+                                    selectedJob === experience.company
+                                        ? "underline"
+                                        : ""
+                                }`}
                                 onClick={() =>
                                     setSelectedJob(experience.company)
                                 }
