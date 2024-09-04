@@ -1,9 +1,7 @@
-import React from "react";
-
 const SkillsSection = () => {
     return (
-        <div className="h-screen bg-[#FF9FE5] w-full text-black flex flex-row items-center md:justify-center">
-            <div className="flex flex-col m-5 md:p-10 md:w-[40rem]">
+        <div className="h-screen bg-[#C77DFF] w-full flex flex-row items-center md:justify-center">
+            <div className="flex flex-col m-5 md:p-10 md:w-[40rem] text-black">
                 <h1 className="font-bold text-xl md:text-3xl">
                     Some skills of mine...
                 </h1>

@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect, useState } from "react";
 
 const titleArray = [
@@ -35,8 +34,8 @@ const IntroductionSection = () => {
     }, []);
 
     return (
-        <div className="h-screen bg-[#6EFAFB] w-full text-black flex flex-row items-center justify-center">
-            <div className="flex flex-col m-5 md:p-10 md:w-[40rem]">
+        <div className="h-screen bg-[#E0AAFF] w-full flex flex-row items-center justify-center">
+            <div className="flex flex-col m-5 md:p-10 md:w-[40rem] text-black">
                 <div>
                     <h1 className="text-xl md:text-3xl">
                         Hello, World! <br /> My name is{" "}

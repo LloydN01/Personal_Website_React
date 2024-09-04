@@ -1,4 +1,3 @@
-import React from "react";
 import Project from "../components/project";
 
 // Import images
@@ -73,14 +72,16 @@ const projectContent = [
 ];
 
 const ProjectSections = () => {
-    const colours: string[] = ["#0FA3B1", "#F7A072", "#EA638C "];
+    const colours: string[] = ["#7B2CBF", "#5A189A", "#3C096C "];
 
     return (
         <div className="w-full flex flex-col">
-            <div className="bg-[#E7F59E] h-screen text-black flex md:justify-center items-center">
+            <div className="bg-[#9D4EDD] h-screen flex md:justify-center items-center">
                 <div className="md:p-10 md:w-[40rem] m-5">
-                    <h1 className="font-bold text-xl md:text-3xl">Projects</h1>
-                    <p className="font-bold italic text-xs md:text-sm">
+                    <h1 className="font-bold text-xl md:text-3xl text-black">
+                        Projects
+                    </h1>
+                    <p className="font-bold italic text-xs md:text-sm text-black">
                         A list of projects I have worked on, starting with this
                         website!
                     </p>
