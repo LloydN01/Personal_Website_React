@@ -46,7 +46,7 @@ const ExperienceSection = () => {
                                 <h2 className="font-bold text-base md:text-lg">
                                     {experience.company}
                                 </h2>
-                                <p className="font-semibold text-base md:text-lg">
+                                <p className="text-base md:text-lg">
                                     {experience.position}
                                 </p>
                             </li>
@@ -55,7 +55,7 @@ const ExperienceSection = () => {
                 </div>
                 <div className="flex flex-col md:w-2/3 h-[10rem]">
                     {selectedJob && (
-                        <div>
+                        <div className="p-3 border-t-2 border-l-0 md:border-t-0 md:border-l-2">
                             {experiences
                                 .filter(
                                     (experience) =>
