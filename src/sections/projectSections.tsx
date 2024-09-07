@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import Project from "../components/project";
 
 // Import images
@@ -73,10 +74,34 @@ const projectContent = [
 
 const ProjectSections = () => {
     const colours: string[] = ["#7B2CBF", "#5A189A", "#3C096C "];
+    const [isStickyVisible, setIsStickyVisible] = useState(false);
+    const headerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsStickyVisible(!entry.isIntersecting);
+            },
+            { threshold: 0 }
+        );
+
+        if (headerRef.current) {
+            observer.observe(headerRef.current);
+        }
+
+        return () => {
+            if (headerRef.current) {
+                observer.unobserve(headerRef.current);
+            }
+        };
+    }, []);
 
     return (
         <div className="w-full flex flex-col">
-            <div className="bg-[#9D4EDD] h-screen flex md:justify-center items-center">
+            <div
+                ref={headerRef}
+                className="bg-[#9D4EDD] h-screen flex md:justify-center items-center"
+            >
                 <div className="md:p-10 md:w-[40rem] m-5">
                     <h1 className="font-bold text-xl md:text-3xl">Projects</h1>
                     <p className="font-bold italic text-xs md:text-sm">
@@ -89,6 +114,11 @@ const ProjectSections = () => {
                     </p>
                 </div>
             </div>
+            {isStickyVisible && (
+                <div className="sticky top-0 bg-[#9D4EDD] z-10 flex justify-center">
+                    <h1 className="font-bold text-base md:text-xl">Projects</h1>
+                </div>
+            )}
             {projectContent.map((project, index) => (
                 <div
                     key={project.id}
