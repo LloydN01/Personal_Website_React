@@ -71,13 +71,13 @@ const Project = ({
                     ))}
                 </div>
                 <div className="carousel-buttons space-x-10">
-                    <button onClick={prevSlide} className="highlight">
+                    <button onClick={prevSlide} className="highlight" title="Previous Slide">
                         <FontAwesomeIcon
                             icon={faCaretLeft}
                             className="h-[3rem]"
                         />
                     </button>
-                    <button onClick={nextSlide} className="highlight">
+                    <button onClick={nextSlide} className="highlight" title="Next Slide">
                         <FontAwesomeIcon
                             icon={faCaretRight}
                             className="h-[3rem]"
