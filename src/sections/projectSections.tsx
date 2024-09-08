@@ -85,13 +85,14 @@ const ProjectSections = () => {
             { threshold: 0 }
         );
 
-        if (headerRef.current) {
-            observer.observe(headerRef.current);
+        const currentHeaderRef = headerRef.current;
+        if (currentHeaderRef) {
+            observer.observe(currentHeaderRef);
         }
 
         return () => {
-            if (headerRef.current) {
-                observer.unobserve(headerRef.current);
+            if (currentHeaderRef) {
+                observer.unobserve(currentHeaderRef);
             }
         };
     }, []);
