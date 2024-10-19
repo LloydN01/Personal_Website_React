@@ -142,7 +142,7 @@ const projectContent = [
 ];
 
 const ProjectSections = () => {
-    const colours: string[] = ["#7B2CBF", "#5A189A", "#3C096C "];
+    const colours: string[] = ["#7B2CBF", "#5A189A", "#3C096C ", "#280648"];
     const [isStickyVisible, setIsStickyVisible] = useState(false);
     const headerRef = useRef<HTMLDivElement>(null);
 
