@@ -1,6 +1,5 @@
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import { useState } from "react";
 
 const Project = ({
@@ -10,6 +9,7 @@ const Project = ({
     description,
     technologies,
     assets,
+    github_link,
 }: {
     name: string;
     subHeading: string;
@@ -17,6 +17,7 @@ const Project = ({
     description: string;
     technologies: string;
     assets: { src: string; alt?: string; type: string }[];
+    github_link: string;
 }) => {
     const [carouselIndex, setCarouselIndex] = useState(0);
 
@@ -41,6 +42,16 @@ const Project = ({
                 </p>
                 <p className="project-tech text-xs md:text-sm">
                     <b>Technologies:</b> {technologies}
+                </p>
+                <p className="project-github text-xs md:text-sm mt-5">
+                    <a
+                        href={github_link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline"
+                    >
+                        View on GitHub
+                    </a>
                 </p>
             </div>
             <div className="flex flex-col flex-grow text-center p-3 md:p-0">
@@ -71,13 +82,21 @@ const Project = ({
                     ))}
                 </div>
                 <div className="carousel-buttons space-x-10">
-                    <button onClick={prevSlide} className="highlight" title="Previous Slide">
+                    <button
+                        onClick={prevSlide}
+                        className="highlight"
+                        title="Previous Slide"
+                    >
                         <FontAwesomeIcon
                             icon={faCaretLeft}
                             className="h-[3rem]"
                         />
                     </button>
-                    <button onClick={nextSlide} className="highlight" title="Next Slide">
+                    <button
+                        onClick={nextSlide}
+                        className="highlight"
+                        title="Next Slide"
+                    >
                         <FontAwesomeIcon
                             icon={faCaretRight}
                             className="h-[3rem]"
